@@ -12,6 +12,8 @@ export class CreateReplaySubjectComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    //this takes all the values starting from the first next till the last
+
     this.subject$ = new ReplaySubject();
     this.subject$.subscribe((x) => console.log('this is first: ', x));
     this.subject$.next(12);
