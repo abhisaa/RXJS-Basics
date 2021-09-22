@@ -28,6 +28,18 @@ export class ApiComponent implements OnInit {
       tap((x) => console.log('inside do: ', x)),
       switchMap((x) => this.queryApi(this.searchString))
     );
+
+    // this.searchSubject
+    //   .pipe(
+    //     debounceTime(200),
+    //     distinctUntilChanged(),
+    //     tap((x) => console.log('inside do: ', x)),
+    //     switchMap((x) => this.queryApi(this.searchString))
+    //   )
+    //   .subscribe((x) => {
+    //     this.results$ = x;
+    //   });
+
     // .pipe(distinctUntilChanged())
     // .pipe(tap((x) => console.log('inside do: ', x)))
     // .pipe(switchMap((x) => this.queryApi(this.searchString)));
