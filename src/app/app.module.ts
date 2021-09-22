@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -15,9 +17,10 @@ import { MergeMapComponent } from './operators/merge-map/merge-map.component';
 import { SwitchMapComponent } from './operators/switch-map/switch-map.component';
 import { ClickEventComponent } from './event-debounce-api/click-event/click-event.component';
 import { DebounceSearchComponent } from './event-debounce-api/debounce-search/debounce-search.component';
+import { ApiComponent } from './event-debounce-api/api/api.component';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule, CommonModule],
   declarations: [
     AppComponent,
     HelloComponent,
@@ -32,6 +35,7 @@ import { DebounceSearchComponent } from './event-debounce-api/debounce-search/de
     SwitchMapComponent,
     ClickEventComponent,
     DebounceSearchComponent,
+    ApiComponent,
   ],
   bootstrap: [AppComponent],
 })
