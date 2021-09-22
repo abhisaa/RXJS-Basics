@@ -14,6 +14,7 @@ import { FilterComponent } from './operators/filter/filter.component';
 import { MergeMapComponent } from './operators/merge-map/merge-map.component';
 import { SwitchMapComponent } from './operators/switch-map/switch-map.component';
 import { ClickEventComponent } from './event-debounce-api/click-event/click-event.component';
+import { DebounceSearchComponent } from './event-debounce-api/debounce-search/debounce-search.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -30,6 +31,7 @@ import { ClickEventComponent } from './event-debounce-api/click-event/click-even
     MergeMapComponent,
     SwitchMapComponent,
     ClickEventComponent,
+    DebounceSearchComponent,
   ],
   bootstrap: [AppComponent],
 })
