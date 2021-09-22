@@ -13,6 +13,7 @@ import { MapComponent } from './operators/map/map.component';
 import { FilterComponent } from './operators/filter/filter.component';
 import { MergeMapComponent } from './operators/merge-map/merge-map.component';
 import { SwitchMapComponent } from './operators/switch-map/switch-map.component';
+import { ClickEventComponent } from './event-debounce-api/click-event/click-event.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -28,6 +29,7 @@ import { SwitchMapComponent } from './operators/switch-map/switch-map.component'
     FilterComponent,
     MergeMapComponent,
     SwitchMapComponent,
+    ClickEventComponent,
   ],
   bootstrap: [AppComponent],
 })
