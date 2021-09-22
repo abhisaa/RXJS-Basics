@@ -11,6 +11,7 @@ import { CreateReplaySubjectComponent } from './observable-examples/create-repla
 import { TakeIntervalComponent } from './operators/take-interval/take-interval.component';
 import { MapComponent } from './operators/map/map.component';
 import { FilterComponent } from './operators/filter/filter.component';
+import { MergeMapComponent } from './operators/merge-map/merge-map.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -24,6 +25,7 @@ import { FilterComponent } from './operators/filter/filter.component';
     TakeIntervalComponent,
     MapComponent,
     FilterComponent,
+    MergeMapComponent,
   ],
   bootstrap: [AppComponent],
 })
