@@ -8,6 +8,11 @@ import { CreateObservableComponent } from './observable-examples/create-observab
 import { CreateSubjectComponent } from './observable-examples/create-subject/create-subject.component';
 import { CreateBehaviourSubjectComponent } from './observable-examples/create-behaviour-subject/create-behaviour-subject.component';
 import { CreateReplaySubjectComponent } from './observable-examples/create-replay-subject/create-replay-subject.component';
+import { TakeIntervalComponent } from './operators/take-interval/take-interval.component';
+import { MapComponent } from './operators/map/map.component';
+import { FilterComponent } from './operators/filter/filter.component';
+import { MergeMapComponent } from './operators/merge-map/merge-map.component';
+import { SwitchMapComponent } from './operators/switch-map/switch-map.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -18,6 +23,11 @@ import { CreateReplaySubjectComponent } from './observable-examples/create-repla
     CreateSubjectComponent,
     CreateBehaviourSubjectComponent,
     CreateReplaySubjectComponent,
+    TakeIntervalComponent,
+    MapComponent,
+    FilterComponent,
+    MergeMapComponent,
+    SwitchMapComponent,
   ],
   bootstrap: [AppComponent],
 })
