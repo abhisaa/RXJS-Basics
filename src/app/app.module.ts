@@ -12,6 +12,7 @@ import { TakeIntervalComponent } from './operators/take-interval/take-interval.c
 import { MapComponent } from './operators/map/map.component';
 import { FilterComponent } from './operators/filter/filter.component';
 import { MergeMapComponent } from './operators/merge-map/merge-map.component';
+import { SwitchMapComponent } from './operators/switch-map/switch-map.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -26,6 +27,7 @@ import { MergeMapComponent } from './operators/merge-map/merge-map.component';
     MapComponent,
     FilterComponent,
     MergeMapComponent,
+    SwitchMapComponent,
   ],
   bootstrap: [AppComponent],
 })
