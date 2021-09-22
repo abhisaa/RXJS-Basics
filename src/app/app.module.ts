@@ -10,6 +10,7 @@ import { CreateBehaviourSubjectComponent } from './observable-examples/create-be
 import { CreateReplaySubjectComponent } from './observable-examples/create-replay-subject/create-replay-subject.component';
 import { TakeIntervalComponent } from './operators/take-interval/take-interval.component';
 import { MapComponent } from './operators/map/map.component';
+import { FilterComponent } from './operators/filter/filter.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -22,6 +23,7 @@ import { MapComponent } from './operators/map/map.component';
     CreateReplaySubjectComponent,
     TakeIntervalComponent,
     MapComponent,
+    FilterComponent,
   ],
   bootstrap: [AppComponent],
 })

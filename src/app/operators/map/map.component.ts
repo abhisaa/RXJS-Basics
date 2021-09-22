@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { from, interval } from 'rxjs';
+import { from } from 'rxjs';
 import { take, map } from 'rxjs/operators';
 
 @Component({
@@ -13,9 +13,6 @@ export class MapComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.mapTest
-      .pipe(take(5))
-      .pipe(map((x) => x * 10))
-      .subscribe((x) => console.log(x));
+    this.mapTest.pipe(map((x) => x * 10)).subscribe((x) => console.log(x));
   }
 }
